@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href = "style.css" rel="stylesheet">
+        <title>Tabela Produtos</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Low_polygon_3D_hamburger.png" alt="amburg" class="logo">
+            </div>
+        </header>
+        
+        <main>
+            <h1 class="titulo"><strong>ENCOMENDAS</strong></h1>
+            <div class="pesquisa">
+                <label for="filtro" class="filtrar">Filtrar:</label>
+                <input type="text" id="filtrar-tabela" placeholder="Digite o nome do cliente" class="entrada">
+            </div>
+            <hr class="divTitulo">
+            <br>
+            
+            <table id="tab-pedidos">
+                <thead>
+                    <tr class="nome_col">
+                        <th class="info-nome">Cliente</ths>
+                        <th>Nome do Hamburguer</th>
+                        <th>Valor unitário R$</th>
+                        <th>Quantidade</th>
+                        <th>Preço R$</th>
+                    </tr>
+                </thead>
+                
+                <tbody class="linhas">
+                    <tr class="pedido">
+                        <td class="info-nome">Claudio</td>
+                        <td>Angus Bacon</td>
+                        <td class="valor">42</td>
+                        <td class="quant">2</td>
+                        <td class="total">0,00</td>
+                    </tr>
+                    
+                    <tr class="pedido">
+                        <td class="info-nome">Marcelo</td>
+                        <td>Cheese Burger</td>
+                        <td class="valor">29</td>
+                        <td class="quant">a</td>
+                        <td class="total">0,00</td>
+                    </tr>
+                    
+                    <tr class="pedido">
+                        <td class="info-nome">Christina</td>
+                        <td>Hamburguer vegetariano</td>
+                        <td class="valor">37</td>
+                        <td class="quant">1</td>
+                        <td class="total">0,00</td>
+                    </tr>
+                    
+                    <tr class="pedido">
+                        <td class="info-nome">Roger</td>
+                        <td>Hamburguer de Frango</td>
+                        <td class="valor">ii</td>
+                        <td class="quant">2</td>
+                        <td class="total">0,00</td>
+                    </tr>
+                </tbody>
+            
+            </table>
+            
+            <br>
+            <hr>
+            
+            <h1 class="titulo"><strong>ADICIONAR PEDIDO</strong></h1>
+            <hr class="divTitulo">
+            <br>
+            <section>
+                <ul id="mensagens-erro"></ul>
+                <form id="formulario">
+                    <fieldset>
+                        <legend>Nova Encomenda</legend>
+                        
+                        <label>Nome do Cliente</label>
+                        <input type="text" name="nome" class="input_padrao" required="">
+                        
+                        <label>Hamburguer</label>
+                        <input type="text" name="lanche" class="input_padrao" required="">
+
+                        <label>Preço unidade</label>
+                        <input type="number" name="valor" class="input_padrao" required="">
+
+                        <label>Quantidade
+                            <!--<select name="qtd">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>-->
+                        </label>
+                        <input type="number" name="qtd" class="input_padrao" required="">
+                        
+                        <br>
+                        <br>
+
+                        <input type="button" value="ADICIONAR" class="enviar" id="botao-form">
+
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <script src="js/calculaTotal.js"></script>
+        <script src="js/addLinha.js"></script>
+        <script src="js/removeLinha.js"></script>
+        <script src="js/filtragem.js"></script>
+    </body>
+</html>

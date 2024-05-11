@@ -1,0 +1,147 @@
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header{
+    background-color: rgb(236, 85, 85);
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
+
+body{
+    background-color: lightgoldenrodyellow;
+}
+
+.logo{
+    width: 12%;
+    margin-left: 43%;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 2%;
+}
+
+#filtrar-tabela{
+    width: 19.5%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.pesquisa{
+    margin-left: 48%;
+    width: 100%;
+}
+
+.filtrar{
+    display: inline;
+    font-size: 18px;
+    padding-right: 6px;
+}
+
+.divTitulo{
+    width: 85%;
+    height: 2px;
+    background-color: black;
+}
+
+table{
+    font-family: "Arial";
+    border-collapse: collapse;
+    border: 2px solid;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 3%;
+}
+
+thead{
+    background-color: rgb(252, 96, 48);
+}
+
+.linhas{
+    background-color: rgb(255, 230, 0);
+}
+
+th, td{
+    border: 1px solid;
+    padding: 6px 60px;
+}
+
+form{
+    width: 22%;
+    padding-left: 38.9%;
+    height: 170%;
+}
+
+fieldset{
+    height: 20%;
+    color: black;
+    border: 3px solid rgb(252, 96, 48);
+    font-size: 20;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+label{
+    display: flex;
+    font-size: 90%;
+    margin-left: 19%;
+}
+
+.input_padrao{
+    width: 60%;
+    display: flex;
+    margin-bottom: 5%;
+    margin-left: 19%;
+}
+
+.item{
+    width: auto;
+    display: inline-block;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+    position: relative;
+}
+
+legend{
+    font-size: 22;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.options{
+    display: inline;
+    padding-top: 10%;
+}
+
+.enviar{
+    margin-left: 32%;
+    margin-top: -10%;
+    padding-top: 2%;
+    padding: 2% 6% 2% 6%;
+    font-weight: bold;
+    background-color: rgb(252, 96, 48);
+}
+
+.enviar:hover{
+    background-color: rgb(248, 68, 13); 
+}
+
+#mensagens-erro{
+    color: rgb(248, 68, 13);
+}
+
+.fadeOut{
+    opacity: 0;
+    transition: 1s
+}
+
+.invisivel{
+    display: none;
+}
