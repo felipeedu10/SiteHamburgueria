@@ -1,28 +1,28 @@
 {
     "encomendas": [
         {
-            "nome": "Claudio",
+            "nome": "Rubens",
             "produto": "Angus Bacon",
             "unitario": 42,
             "qtde": 2,
             "total": 0
         },
         {
-            "nome": "Marcelo",
+            "nome": "Jorge",
             "produto": "Cheese Burger",
             "unitario": 29,
             "qtde": 1,
             "total": 0
         },
         {
-            "nome": "Christina",
+            "nome": "Juliana",
             "produto": "Hamburguer vegetariano",
             "unitario": 37,
             "qtde": 1,
             "total": 0
         },
         {
-            "nome": "Roger",
+            "nome": "José",
             "produto": "Hamburguer de Frango",
             "unitario": 35,
             "qtde": 3,

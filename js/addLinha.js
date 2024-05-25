@@ -1,23 +1,3 @@
-/*function cadPedido(nome, valor, lanche, qtd){
-
-    var tb = document.getElementById("tabPedidos");
-    var qtdLinhas = tb.rows.length;
-    var linha = tb.insertRow(qtdLinhas);
-    
-    var cellNome = linha.insertCell(0);
-    var cellValor = linha.insertCell(1);
-    var cellLanche = linha.insertCell(2);
-    var cellQtd = linha.insertCell(3);
-    var cellTotal = linha.insertCell(4);
-
-    cellNome.innerHTML = nome;
-    cellValor.innerHTML = valor;
-    cellLanche.innerHTML = lanche;
-    cellQtd.innerHTML = qtd;
-    cellTotal.innerHTML = calculaTotal(qtd, valor);
-
-}*/
-
 var botaoAdicionar = document.querySelector("#botao-form");
 
 botaoAdicionar.addEventListener("click", function(event){
@@ -80,10 +60,11 @@ function addEncomenda(novaEncomenda){
 }
 
 //Monta uma coluna nova
-function montaTD(dado) {
+function montaTD(dado, style) {
 
     var td = document.createElement("td");
     td.textContent = dado;
+    td.classList.add(style);
 
     return td;
 }
@@ -93,13 +74,15 @@ function montaTR(novaEncomenda){
 
     var tr = document.createElement("tr");
 
-    tr.appendChild(montaTD(novaEncomenda.nome));
-    tr.appendChild(montaTD(novaEncomenda.produto));
-    tr.appendChild(montaTD(conversao(parseFloat(novaEncomenda.unitario))));
-    tr.appendChild(montaTD(novaEncomenda.qtde));
+    tr.appendChild(montaTD(novaEncomenda.nome, "info-nome"));
+    tr.appendChild(montaTD(novaEncomenda.produto, "lanche"));
+    tr.appendChild(montaTD(conversao(parseFloat(novaEncomenda.unitario)), "valor"));
+    tr.appendChild(montaTD(novaEncomenda.qtde, "quant"));
     total = calculaTotal(novaEncomenda.qtde, novaEncomenda.unitario);
-    tr.appendChild(montaTD(conversao(total)));
+    tr.appendChild(montaTD(conversao(total), "total"));
 
+    tr.classList.add("pedido");
+    
     return tr;
 }
 
